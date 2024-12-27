@@ -15,6 +15,8 @@ function AppProvider({ children }) {
     },
   ]);
   const [imageClicked, setImageClicked] = useState(false);
+  const [clickedUrl, setClickedUrl] = useState("");
+  const [clickedText, setClickedText] = useState("")
 
   return (
     <AppContext.Provider
@@ -25,6 +27,11 @@ function AppProvider({ children }) {
         setMessages,
         imageClicked,
         setImageClicked,
+        clickedText,
+        setClickedUrl,
+        setClickedText,
+        clickedUrl
+
       }}
     >
       {children}

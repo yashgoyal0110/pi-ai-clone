@@ -17,12 +17,14 @@
 }
 .img-one-container:hover, .img-two-container:hover{
     transform: scale(0.93);
+    filter: brightness(0.95);
 }
 
 
 .img-one-container img, .img-two-container img{
-    height: 160px;
-    width: 155px;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
     border: 2px solid rgb(250, 248, 248);
     border-radius: 20px;
 }
@@ -33,4 +35,15 @@
     color: rgb(251, 246, 246);
     font-weight: 600;
     padding: 10px;
+}
+@media screen and (max-width:1025px){
+    .level-one{
+    width: 30vw;
+    height: 400px;
+    }
+    .img-one-container img, .img-two-container img{
+        /* width: 25vw; */
+        /* column-gap: 40px; */
+    }
+
 }

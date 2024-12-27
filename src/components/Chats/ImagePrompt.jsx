@@ -1,9 +1,9 @@
 import './ImagePrompt.css'
-function ImagePrompt(image) {
+function ImagePrompt({url, text}) {
   return (
     <div className="image-prompt">
-    <p>{image.text}</p>
-    <img src={image.url}></img>
+    <p>{text}</p>
+    <img src={url}></img>
 </div>
   )
 }

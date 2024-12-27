@@ -1,10 +1,10 @@
-import "./LevelThree.css";
+import { useContext } from "react";
+import "./LevelTwo.css";
 import { AppContext } from "../../../main";
 import { fetchAIResponse } from "../../ChatBox/Gemini";
-import { useContext } from "react";
 
-function LevelThree({ image }) {
-  const { setMessages, setImageClicked, setClickedUrl, setClickedText } =
+function LevelTwo({ image }) {
+  const { setMessages, setImageClicked, setClickedText, setClickedUrl } =
     useContext(AppContext);
   async function imageClick(input, url) {
     setImageClicked(true);
@@ -15,13 +15,15 @@ function LevelThree({ image }) {
   }
   return (
     <div
-      className="level-three"
+      className="level-two"
       onClick={() => imageClick(image.text, image.url)}
     >
-      <img src={image.url}></img>
       <p>{image.text}</p>
+      <div className="level-two-image-container">
+        <img src={image.url}></img>
+      </div>
     </div>
   );
 }
 
-export default LevelThree;
+export default LevelTwo;

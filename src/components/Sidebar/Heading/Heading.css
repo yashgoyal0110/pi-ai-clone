@@ -5,3 +5,14 @@
 .heading-container {
  margin-top: 30px;
 }
+.heading-name{
+  font-style: italic;
+}
+
+@media screen and (max-width:1025px){
+  .heading-container{
+ margin-top: 70px;
+  }
+
+
+}

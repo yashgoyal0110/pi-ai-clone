@@ -11,8 +11,11 @@
     transform: scale(0.93);
 }
 .level-three img{
-    height: 320px;
-    width: 320px;
+    /* height: 320px;
+    width: 320px; */
+    height: 100%;
+    width: 100%;
+    object-fit:fill;
     border-radius: 20px;
     border: 1.5px solid rgb(250, 248, 248);
     cursor: pointer;
@@ -24,4 +27,11 @@
     font-weight: 600;
     position: absolute;
     bottom: 1%;
+}
+@media screen and (max-width:1025px){
+    .level-three{
+    width: 30vw;
+    height: 400px;
+    }
+
 }

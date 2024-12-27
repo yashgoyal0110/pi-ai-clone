@@ -3,9 +3,16 @@ import { AppContext } from "../../../main";
 import { useContext } from "react";
 import { fetchAIResponse } from "../../ChatBox/Gemini";
 function LevelOne({ imageOne, imageTwo }) {
-  const { setMessages } = useContext(AppContext);
-  async function imageClick(input) {
-    setMessages((prev) => [...prev, { type: "user", content: `${input}` }]);
+  const {
+    setMessages,
+    setImageClicked,
+    setClickedUrl,
+    setClickedText,
+  } = useContext(AppContext);
+  async function imageClick(input, url) {
+    setImageClicked(true);
+    setClickedText(input);
+    setClickedUrl(url);
     const aiResponse = await fetchAIResponse(input);
     setMessages((prev) => [...prev, { type: "ai", content: aiResponse }]);
   }
@@ -13,14 +20,14 @@ function LevelOne({ imageOne, imageTwo }) {
     <div className="level-one">
       <div
         className="img-one-container"
-        onClick={() => imageClick(imageOne.text)}
+        onClick={() => imageClick(imageOne.text, imageOne.url)}
       >
         <img src={imageOne.url}></img>
         <p>{imageOne.text}</p>
       </div>
       <div
         className="img-two-container"
-        onClick={() => imageClick(imageTwo.text)}
+        onClick={() => imageClick(imageTwo.text, imageTwo.url)}
       >
         <img src={imageTwo.url}></img>
         <p>{imageTwo.text}</p>

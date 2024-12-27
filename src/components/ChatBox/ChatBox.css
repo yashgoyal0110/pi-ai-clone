@@ -27,3 +27,8 @@
     border-radius: 50%;
     cursor: pointer;
 }
+@media screen and (max-width:1024px){
+    .{
+    display: none;
+    }
+}

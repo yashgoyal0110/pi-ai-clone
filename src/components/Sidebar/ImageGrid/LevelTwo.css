@@ -15,11 +15,15 @@
 .level-two:hover{
     transform: scale(0.93);
 }
-
-
-.level-two img {
+.level-two-img-container{
     width: 140px;
     height: 140px;
+}
+
+.level-two img {
+   height: 100%;
+   width: 100%;
+   object-fit: fill;
     border-radius: 20px;
     flex-shrink: 0; 
 }
@@ -32,4 +36,11 @@
     line-height: 1.2; 
     text-align: left; 
     margin-top: 90px;
+}
+@media screen and (max-width:1025px){
+    .level-two{
+    width: 35vw;
+    height: 200px;
+    }
+
 }

@@ -1,7 +1,8 @@
 .chat-container {
   overflow-y: scroll;
-  max-height: 600px;
+  max-height: 550px;
   width: 650px;
+
 }
 .chat-container::-webkit-scrollbar {
   display: none;
@@ -27,7 +28,6 @@
   max-width: 70%;
   font-size: 20px;
 }
-
 .message.ai .message-content {
-  background: none;
+  color: rgba(14, 60, 38, 1);
 }
