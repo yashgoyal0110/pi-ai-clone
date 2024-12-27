@@ -41,9 +41,4 @@
     width: 30vw;
     height: 400px;
     }
-    .img-one-container img, .img-two-container img{
-        /* width: 25vw; */
-        /* column-gap: 40px; */
-    }
-
 }

@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'GT Alpina Fine Condensed';
     src: url('/fonts/GT-Alpina-Fine-Condensed-Regular-Trial.otf') format('opentype');
-    font-weight: normal; /* Adjust weight if necessary */
-    font-style: normal;  /* Adjust style if necessary */
+    font-weight: normal; 
+    font-style: normal; 
   }
 .history-box {
   background-color: rgb(250, 243, 234);

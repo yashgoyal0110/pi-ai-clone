@@ -11,8 +11,6 @@
     transform: scale(0.93);
 }
 .level-three img{
-    /* height: 320px;
-    width: 320px; */
     height: 100%;
     width: 100%;
     object-fit:fill;

@@ -9,7 +9,7 @@ function Chats({ messages }) {
     <div className="chat-container">
       {imageClicked && <ImagePrompt url = {clickedUrl} text = {clickedText}/>}
       {messages.map((message, index) => (
-        <div key={index} className={`message ${message.type}`}>
+        <div key={index} className={!imageClicked ? "message message-not" : `message ${message.type}`}>
           <div className="message-content">{message.content}</div>
         </div>
       ))}
