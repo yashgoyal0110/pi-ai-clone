@@ -1,0 +1,33 @@
+.history-box{
+    background-color: rgb(250, 243, 234);
+    margin-top: 20px;
+    height: 175px;
+    border-radius: 20px;
+    width: 320px;
+    border: 1.5px solid white;
+    transition: transform 0.3s ease-in-out;
+}
+.history-box:hover{
+    transform: scale(0.93);
+}
+.history-box-content{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.download-message{
+    color: #0e3c26;
+}
+.msg-and-manage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.manage-history{
+    color: #058247;
+    cursor: pointer;
+    text-decoration: none;
+
+}

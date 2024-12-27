@@ -1,0 +1,27 @@
+.level-three{
+    height: 320px;
+    width: 320px;
+    position: relative;
+    border-radius: 20px;
+    border: 1.5px solid rgb(250, 248, 248);
+    margin-top: 18px;
+    transition: transform 0.3s ease-in-out;
+}
+.level-three:hover{
+    transform: scale(0.93);
+}
+.level-three img{
+    height: 320px;
+    width: 320px;
+    border-radius: 20px;
+    border: 1.5px solid rgb(250, 248, 248);
+    cursor: pointer;
+}
+.level-three p{
+    color: rgb(250, 250, 250);
+    padding: 10px;
+    font-size: 26px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 1%;
+}

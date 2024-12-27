@@ -1,0 +1,61 @@
+.profile-section-wrapper {
+  background-color: rgba(250, 243, 234, 1);
+  width: 6.5vw;
+  border-right: 1px solid #ede1d1;
+}
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-top: 25px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #6a6255;
+  row-gap: 7px;
+  cursor: pointer;
+  height: 65px;
+}
+.discover {
+  height: 65px;
+  /* width: 60px; */
+  color: #6a6255;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 5px;
+  cursor: pointer;
+}
+.profile-icon,
+.discover-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-icon {
+  font-size: 18px;
+  font-weight: 600;
+}
+.discover-icon {
+  font-size: 25px;
+  font-weight: 600;
+}
+.profile-text,
+.discover-text {
+  font-weight: 400;
+}
+.profile-clicked,
+.discover-clicked {
+  color: black;
+  background-color: #ede1d1;
+  border-radius: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .profile-section-wrapper {
+    display: none;
+  }
+}

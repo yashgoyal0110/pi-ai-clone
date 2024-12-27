@@ -1,0 +1,35 @@
+.level-two {
+    background-color: #faf3ea;
+    border: 1.5px solid rgb(250, 248, 248);
+    border-radius: 20px;
+    height: 160px;
+    width: 320px;
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px;
+    margin-top: 15px;
+    position: relative; 
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.level-two:hover{
+    transform: scale(0.93);
+}
+
+
+.level-two img {
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    flex-shrink: 0; 
+}
+
+.level-two p {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 500;
+    max-width: 150px;
+    line-height: 1.2; 
+    text-align: left; 
+    margin-top: 90px;
+}

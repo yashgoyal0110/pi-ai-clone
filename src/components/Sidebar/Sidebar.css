@@ -1,0 +1,21 @@
+.side-bar{
+    background-color: #f8efe3;
+    width: 26vw;
+    height: 100vh;
+    border-right: 0.1px solid rgb(203, 200, 200);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.side-bar::-webkit-scrollbar {
+    display: none;
+}
+.side-bar-content{
+    margin-left: 20px;
+}
+@media screen and (max-width:1024px){
+    .side-bar{
+    width: 100vw;
+    position: relative;
+    }
+
+}

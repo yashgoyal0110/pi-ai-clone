@@ -1,0 +1,28 @@
+.chat-box{
+    position: relative;
+    background-color: rgba(250, 243, 234, 1);
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    width: 67.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.speaker-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    left: 92%;
+    top: 1%;
+    margin-top: 30px;
+    color: rgb(135, 124, 108);
+    background-color: rgb(245, 234, 219);
+    font-size: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}

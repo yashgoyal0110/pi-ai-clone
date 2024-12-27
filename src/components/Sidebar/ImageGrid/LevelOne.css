@@ -1,0 +1,36 @@
+.level-one{
+    display: flex;
+    column-gap: 20px;
+    margin-top: 15px;
+}
+.img-one-container, .img-two-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 160px;
+    width: 155px;
+    border: 2px solid rgb(254, 252, 252);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.img-one-container:hover, .img-two-container:hover{
+    transform: scale(0.93);
+}
+
+
+.img-one-container img, .img-two-container img{
+    height: 160px;
+    width: 155px;
+    border: 2px solid rgb(250, 248, 248);
+    border-radius: 20px;
+}
+.img-one-container p, .img-two-container p{
+    position: absolute;
+    font-size: 18px;
+    bottom: 0%;
+    color: rgb(251, 246, 246);
+    font-weight: 600;
+    padding: 10px;
+}

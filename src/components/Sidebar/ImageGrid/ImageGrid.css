@@ -1,0 +1,8 @@
+.image-grid{
+    margin-top: 25px;
+}
+@media screen and (max-width:1024px){
+    .image-grid{
+    width: 100vw;
+    }
+}
