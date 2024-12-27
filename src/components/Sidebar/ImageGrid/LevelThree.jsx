@@ -7,6 +7,7 @@ function LevelThree({ image }) {
   const { setMessages, setImageClicked, setClickedUrl, setClickedText } =
     useContext(AppContext);
   async function imageClick(input, url) {
+    setMessages([]);
     setImageClicked(true);
     setClickedText(input);
     setClickedUrl(url);

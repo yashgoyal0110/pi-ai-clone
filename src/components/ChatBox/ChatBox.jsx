@@ -17,11 +17,6 @@ const {messages, setMessages} = useContext(AppContext)
     setMessages((prev) => [...prev, { type: "ai", content: aiResponse }]);
   };
 
-  const handleImageClick = async (title) => {
-    const aiResponse = await fetchAIResponse(title);
-    setMessages((prev) => [...prev, { type: "ai", content: aiResponse }]);
-  };
-
   function handleSpeaker() {
     setSpeakerClick(!speakerClick);
   }

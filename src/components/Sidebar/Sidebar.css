@@ -12,9 +12,26 @@
 .side-bar-content{
     margin-left: 20px;
 }
+.cross-container{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: rgba(14, 60, 38, 1);
+    background-color: rgba(237, 225, 209, 1);
+    margin-top: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
 @media screen and (max-width:1025px){
     .side-bar{
     width: 100vw;
     }
-
+    .cross-container{
+        display: flex;
+    }
 }

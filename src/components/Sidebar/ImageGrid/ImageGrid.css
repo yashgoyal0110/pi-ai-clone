@@ -5,11 +5,21 @@
 }
 @media screen and (max-width:1025px){
     .image-grid{
-    width: 100%;
+    /* width: 100%; */
     border: 1px solid red;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 20px;
+    /* column-gap: 20px; */
+    }
+
+}
+@media screen and (max-width:830px){
+    .image-grid{
+    /* width: 100%; */
+    border: 1px solid red;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 30px;
     }
 
 }
