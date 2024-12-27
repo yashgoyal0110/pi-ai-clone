@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useContext} from "react";
 import { FaArrowUp } from "react-icons/fa6";
 import "./PromptBox.css";
+import { AppContext } from "../../main";
 
 function PromptBox({onSendMessage}) {
-  const [inputVal, setInputVal] = useState("");
+  const {inputVal, setInputVal} = useContext(AppContext);
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(inputVal);

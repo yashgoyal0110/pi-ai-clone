@@ -1,7 +1,7 @@
 export const MockData = [
   {
     id: 1,
-    url: "https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fblog%2F1726579796102Generative%20ai.jpg&w=1920&q=75",
+    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlKTi678cROu89t-9VlNHJnFSV0XROOSPVLA&s",
     text: "How to study effectively with AI",
   },
   {

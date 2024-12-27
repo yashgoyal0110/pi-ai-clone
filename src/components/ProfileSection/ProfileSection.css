@@ -1,6 +1,6 @@
 .profile-section-wrapper {
   background-color: rgba(250, 243, 234, 1);
-  width: 6.5vw;
+  width: 90px;
   border-right: 1px solid #ede1d1;
 }
 .profile-section {
@@ -8,6 +8,8 @@
   flex-direction: column;
   row-gap: 5px;
   margin-top: 25px;
+  justify-content: center;
+  align-items: center;
 }
 .profile {
   display: flex;
@@ -18,10 +20,11 @@
   row-gap: 7px;
   cursor: pointer;
   height: 65px;
+  width: 65px;
 }
 .discover {
   height: 65px;
-  /* width: 60px; */
+  width: 70px;
   color: #6a6255;
   display: flex;
   justify-content: center;
@@ -52,9 +55,9 @@
 .discover-clicked {
   color: black;
   background-color: #ede1d1;
-  border-radius: 40px;
+  border-radius: 20px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   .profile-section-wrapper {
     display: none;
   }

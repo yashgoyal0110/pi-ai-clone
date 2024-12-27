@@ -1,6 +1,6 @@
 .side-bar{
     background-color: #f8efe3;
-    width: 26vw;
+    width: 375px;
     height: 100vh;
     border-right: 0.1px solid rgb(203, 200, 200);
     overflow-x: hidden;
@@ -12,10 +12,10 @@
 .side-bar-content{
     margin-left: 20px;
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1025px){
     .side-bar{
     width: 100vw;
-    position: relative;
+    /* position: relative; */
     }
 
 }
